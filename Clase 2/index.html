@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Clase 2 - script</title>
+    </head>
+    <body>
+        <form>
+            <input type="text" class="prueba1" value="A">
+            <input type="submit">
+            <br><br>
+            <input type="text" class="prueba2">
+            <input type="submit">
+            <br><br>
+            <input type="text" class="prueba3">
+            <input type="submit">
+            <br><br>
+            <input type="text" class="prueba4">
+            <input type="submit">
+            <br><br>
+        </form>
+        <center>
+            <h1>Texto con Javascript</h1>
+            <form>
+                <div>
+                    <label for="nombre">Escribe tu nombre:</label>
+                    <input type="text" id="nombre">
+                </div>
+                <div>
+                    <label for="mensaje">Escribe tu mensaje:</label>
+                    <br>
+                    <textarea id="mensaje" cols="30" rows="5"></textarea>
+                </div>
+                <div>
+                    <input type="button" value="Enviar mensaje" onclick="capturarTexto()">
+                </div>
+            </form>
+        </center>
+        <br><br>
+        <div id="respuesta"></div>
+        <input type="button" id="ocultar" onclick="mostrar(this)" value="ocultar"><br><br>
+        <img id="img" src="A.jpg" height="250px">
+        <script src="scripts.js"></script>
+    </body>
+</html>
