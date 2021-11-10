@@ -1,0 +1,14 @@
+[
+    {
+        "Nombre":"McDonals",
+        "Empleados":20,
+        "CEO":"Betty Escariaga",
+        "Calificacion":4.2
+    },
+    {
+        "Nombre":"Surtitodo",
+        "Empleados":28,
+        "CEO":"Oscar Melton",
+        "Calificacion":3.9
+    }
+]

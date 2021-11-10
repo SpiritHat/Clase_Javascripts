@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <section id="tests">
+           <h1>Archivo JSON - Ejercicio</h1>
+        <div id="container"></div>
+        <br>
+        <div id="container2"></div> 
+        </section>
+        <script type="text/javascript">
+            var objetoJSON;
+            objetoJSON={"Nombre":"Harold","Edad":19,"render":function(){
+                document.getElementById('container').innerHTML=objetoJSON.Nombre+" "+objetoJSON.Edad;
+            }};
+            objetoJSON.render();
+            
+            var objetos={"Personas":[
+                {"Nombre":"Harold","Edad":19},
+                {"Nombre":"Jaider","Edad":18},
+                {"Nombre":"Sebastian","Edad":20},
+                {"Nombre":"Felipe","Edad":21},
+                {"Nombre":"Julieth","Edad":20},
+            ]};
+            document.getElementById("container2").innerHTML=objetos.Personas[1].Nombre+" "+objetos.Personas[1].Edad;
+
+            let tiendas=
+            `[
+                {
+                    "Nombre":"McDonals",
+                    "Empleados":20,
+                    "CEO":"Betty Escariaga",
+                    "Calificacion":4.2
+                },
+                {
+                    "Nombre":"Surtitodo",
+                    "Empleados":28,
+                    "CEO":"Oscar Melton",
+                    "Calificacion":3.9
+                }
+            ]`
+
+            console.log(JSON.parse(tiendas))
+        </script>
+    </body>
+</html>
